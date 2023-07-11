@@ -1,6 +1,7 @@
 package main
 
 import (
+	cryptoRand "crypto/rand"
 	"errors"
 	"fmt"
 	"math/rand"
@@ -11,9 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/akiozihao/pogreb-bench/kv"
 	"golang.org/x/sync/errgroup"
-
-	"github.com/akrylysov/pogreb-bench/kv"
 )
 
 func dirSize(path string) (int64, error) {
@@ -103,7 +103,7 @@ func clearLine() {
 
 func benchmarkPut(opts options, db kv.Store, keys [][]byte) error {
 	valSrc := make([]byte, opts.maxValueSize)
-	if _, err := rand.Read(valSrc); err != nil {
+	if _, err := cryptoRand.Read(valSrc); err != nil {
 		return err
 	}
 

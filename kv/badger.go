@@ -1,7 +1,7 @@
 package kv
 
 import (
-	"github.com/dgraph-io/badger/v3"
+	"github.com/dgraph-io/badger/v4"
 )
 
 func newBadger(path string) (Store, error) {
