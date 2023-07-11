@@ -12,6 +12,14 @@ require (
 )
 
 require (
+	github.com/bwmarrin/snowflake v0.3.0 // indirect
+	github.com/gofrs/flock v0.8.1 // indirect
+	github.com/hashicorp/golang-lru/v2 v2.0.3 // indirect
+	github.com/rosedblabs/go-immutable-radix/v2 v2.0.1-0.20230614125820-f2a7bc058c90 // indirect
+	github.com/rosedblabs/wal v1.1.0 // indirect
+)
+
+require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/dgraph-io/ristretto v0.1.1 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
@@ -25,7 +33,8 @@ require (
 	github.com/google/pprof v0.0.0-20211214055906-6f57359322fd // indirect
 	github.com/klauspost/compress v1.12.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/rosedblabs/rosedb/v2 v2.2.1
 	go.opencensus.io v0.22.5 // indirect
 	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
+	golang.org/x/sys v0.8.0 // indirect
 )

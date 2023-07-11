@@ -16,6 +16,7 @@ var stores = map[string]func(string) (Store, error){
 	"goleveldb": newGoleveldb,
 	"bbolt":     newBbolt,
 	"badger":    newBadger,
+	"rosedb":    newRosedb,
 }
 
 func NewStore(name string, path string) (Store, error) {
