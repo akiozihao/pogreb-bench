@@ -89,3 +89,16 @@ get: 0.153s     653056 ops/s
 put + get: 0.873s
 file size: 113.11MB
 peak sys mem: 180.99MB
+==============================================
+engine: lotusdb
+keys: 100000
+key size: 16-64
+value size 128-512
+concurrency: 1
+
+put: 0.919s     108842 ops/s
+get: 0.100s     1002641 ops/s
+
+put + get: 1.018s
+file size: 20.00B
+peak sys mem: 286.34MB
